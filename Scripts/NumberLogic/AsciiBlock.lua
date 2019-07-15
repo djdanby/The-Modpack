@@ -391,9 +391,7 @@ function AsciiBlock.server_onFixedUpdate( self, dt )
 	self.power = (self.power + buttonpower)%(#self.icons)
 	
 	
-	if self.power ~= self.interactable.power then
-		self.interactable:setPower(self.power)
-	end
+	self.interactable:setPower(self.power)
 	
 	self.needssave = self.needssave or (self.power ~= self.interactable.power)
 	

@@ -39,9 +39,8 @@ function WASDThruster.server_onRefresh( self )
 end
 
 function WASDThruster.server_onFixedUpdate( self, dt )
-	if self.interactable.power ~= self.power then 
-		self.interactable:setPower(self.power)
-	end
+	self.interactable:setPower(self.power)
+	
 	if self.power > 0 and math.abs(self.power) ~= math.huge then
 		sm.physics.applyImpulse(self.shape, self.direction*self.power*-1)
 		--print(self.direction)
