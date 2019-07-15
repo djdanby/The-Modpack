@@ -1612,9 +1612,42 @@
 			"sticky": "+Y-Y-Z+X-X",
 			"qualityLevel": 4
 
-		}
+		},
 
-
+		/*	weapons */
+		
+		{
+            "uuid": "3203dd70-e3dc-4dbf-9c45-33d73b3e2e2a",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/Robot2_dif.png",
+                                    "$MOD_DATA/Objects/Textures/Plates_asg.png",
+                                    "$MOD_DATA/Objects/Textures/Robot2_Normal.png"
+                                ],
+                                "material": "DifAsgNor"
+                            }
+                        ],
+                        "mesh": "$MOD_DATA/Objects/Mesh/RobotWeapon.fbx"
+                    }
+                ]
+            },
+            "rotationSet": "PropY",
+            "density": 250,
+            "color": "df7f00",
+            "box": { "x": 3, "y": 2, "z": 1 },
+            "physicsMaterial": "Metal",
+            "sticky": "-X+X-Y+Y-Z+Z",
+            "qualityLevel": 2,
+			"scripted": {
+				"filename": "$MOD_DATA/Scripts/Locomotion/EMP.lua",
+				"classname": "EMP"
+			}
+        }
+		
 
 
    ]
