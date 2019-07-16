@@ -59,7 +59,7 @@ function SmartThruster.server_onFixedUpdate( self, dt )
 	power = power * logicinput
 		
 	if power ~= 0 and math.abs(power) ~= math.huge then
-		sm.physics.applyImpulse(self.shape, sm.vec3.new(0,0, 0 - power))
+		sm.physics.applyImpulse(self.shape, sm.vec3.new(0,0, 0 - self.interactable.power))
 	end
 end
 

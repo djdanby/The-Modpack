@@ -42,7 +42,7 @@ function WASDThruster.server_onFixedUpdate( self, dt )
 	self.interactable:setPower(self.power)
 	
 	if self.power > 0 and math.abs(self.power) ~= math.huge then
-		sm.physics.applyImpulse(self.shape, self.direction*self.power*-1)
+		sm.physics.applyImpulse(self.shape, self.direction*self.interactable.power*-1)
 		--print(self.direction)
 	end
 end
@@ -201,7 +201,7 @@ function WASDThruster.client_onFixedUpdate(self, dt)
 	local worldRot = sm.vec3.getRotation( getLocal(self.shape,sm.shape.getUp(self.shape)),self.direction)
 	self.shootEffect:setOffsetRotation(worldRot)
 	self.shootEffect:setOffsetPosition((-sm.vec3.new(0,0,1.25)+self.direction)*0.36)
-	if self.power > 0 then
+	if self.interactable.power > 0 then
 		if not self.shootEffect:isPlaying() then
 		self.shootEffect:start() end
 	else

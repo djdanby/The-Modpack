@@ -37,8 +37,9 @@ function Gimball.server_onRefresh( self )
 end
 
 function Gimball.server_onFixedUpdate( self )
+	self.interactable:setPower(self.power)
 	if self.power ~= 0 and math.abs(self.power) ~= math.huge then
-		sm.physics.applyImpulse(self.shape, self.direction*math.abs(self.power), true)
+		sm.physics.applyImpulse(self.shape, self.direction*math.abs(self.interactable.power), true)
 		--print(self.direction)
 	end
 end
