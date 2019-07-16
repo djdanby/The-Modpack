@@ -44,38 +44,42 @@ function EMP.server_onFixedUpdate(self, dt)
 	self.parentWasActive = parentActive
 	
 	
-	if EMPDeactivation == sm.game.getCurrentTick() then -- repair to normal functions
-		self:server_repairFunctions()
-	end
-	
-	
-	if self.interactable.active then -- calculate particle location for all affected interactables near players. with randomness
-		self.interactable.active = false
-		
+	if self.active then -- 1 cycle after self.interactable.active, parts were able to add themselves to  affectedInteractables
+		-- calculate particle location for all affected interactables near players. with randomness
 		local particleLocations = {}
 		
 		local randomness = math.ceil(table.size(affectedInteractables)/100)
 		
-		for k, interactable in pairs(affectedInteractables) do
-			if math.random(randomness) == 1 and interactable and sm.exists(interactable) then
-				local pos = interactable:getShape().worldPosition
-				
-				table.insert(particleLocations, pos)
+		for k, affectedInteractable in pairs(affectedInteractables) do
+			if math.random(randomness) == 1 and affectedInteractable and sm.exists(affectedInteractable[1]) then
+				table.insert(particleLocations, affectedInteractable[1]:getShape().worldPosition)
 			end
 		end
-		
 		self.network:sendToClients("client_createParticlesAt", particleLocations)
 	end
+	
+	
+	self.active = self.interactable.active
+	if self.interactable.active then
+		self.interactable.active = false
+	end
+	
+	
+	
+	local isEmptyTable = table.size(affectedInteractables) == 0
+	if isEmptyTable and not self.wasEmptyTable then
+		self:server_repairFunctions()
+	end
+	self.wasEmptyTable = isEmptyTable
 	
 	self.interactable:setPower(0) -- make vulnerable to other EMP's
 end
 
-function EMP.server_onDestroy(self) -- repair to normal functions
-	self:server_repairFunctions()
+function EMP.server_onDestroy(self)
+
 end
 
 function EMP.server_repairFunctions(self)
-	affectedInteractables = {}
 	sm.interactable.setPower  = BACKUP_setPower 
 	sm.interactable.setValue  = BACKUP_setValue 
 	sm.interactable.setActive = BACKUP_setActive
@@ -85,13 +89,10 @@ function EMP.server_repairFunctions(self)
 	self.interactable.setActive = sm.interactable.setActive
 end
 
--- function EMP.getPlayerPositions(self) -- can be used to get player locations so it only does particles there
--- 	local playerPositions = {}
--- 	for k, v in pairs(sm.player.getAllPlayers()) do
--- 		table.insert(playerPositions, v.character.worldPosition)
--- 	end
--- 	return playerPositions
--- end
+
+	-- if EMPDeactivation == sm.game.getCurrentTick() then -- repair to normal functions
+		-- self:server_repairFunctions()
+	-- end
 
 
 function EMP.server_clientInteract(self)
@@ -111,46 +112,41 @@ function EMP.server_clientInteract(self)
 		end
 	end
 	
-	EMPDeactivation = sm.game.getCurrentTick() + (activationtime or 120) -- ticks, global so that any EMP can deactivate scrambling
+	local EMPDeactivation = sm.game.getCurrentTick() + (activationtime or 120) -- ticks, global so that any EMP can deactivate scrambling
 	range = range or 100 -- blocks to meters
 	
 	local position = self.shape.worldPosition
+	
+	
+	local function HijackedFunction(interactable, value, Original_function)
+		if affectedInteractables[interactable.id] then
+			-- affected interactable
+			Original_function(interactable, 0)
+			if affectedInteractables[interactable.id][2] < sm.game.getCurrentTick() then
+				affectedInteractables[interactable.id] = nil
+				if table.size(affectedInteractables) == 0 then
+					EMP.server_repairFunctions({interactable = interactable})
+				end
+			end
+			
+		elseif self.active and (interactable:getShape().worldPosition - position):length() < range then
+			-- add to affected interactables
+			affectedInteractables[interactable.id] = {interactable, EMPDeactivation}
+		else 
+			-- not start of emp or out of range
+			Original_function(interactable, value)
+		end
+	end
+	
 	-- overwriting! :
 	function sm.interactable.setPower(interactable, value)
-		if affectedInteractables[interactable.id] then
-			-- affected interactable
-			BACKUP_setPower(interactable, 0)
-		elseif self.interactable.active and (interactable:getShape().worldPosition - position):length() < range then
-			-- add to affected interactables
-			affectedInteractables[interactable.id] = interactable
-		else 
-			-- not start of emp or out of range
-			BACKUP_setPower(interactable, value)
-		end
+		HijackedFunction(interactable, value, BACKUP_setPower)
 	end
 	function sm.interactable.setValue(interactable, value)
-		if affectedInteractables[interactable.id] then
-			-- affected interactable
-			BACKUP_setValue(interactable, 0)
-		elseif self.interactable.active and (interactable:getShape().worldPosition - position):length() < range then
-			-- add to affected interactables
-			affectedInteractables[interactable.id] = interactable
-		else 
-			-- not start of emp or out of range
-			BACKUP_setValue(interactable, value)
-		end
+		HijackedFunction(interactable, value, BACKUP_setValue)
 	end
 	function sm.interactable.setActive(interactable, value)
-		if affectedInteractables[interactable.id] then
-			-- affected interactable
-			BACKUP_setActive(interactable, false)
-		elseif self.interactable.active and (interactable:getShape().worldPosition - position):length() < range then
-			-- add to affected interactables
-			affectedInteractables[interactable.id] = interactable
-		else 
-			-- not start of emp or out of range
-			BACKUP_setActive(interactable, value)
-		end
+		HijackedFunction(interactable, value, BACKUP_setActive)
 	end
 	
 	-- applying changed for userdata! :
@@ -173,5 +169,13 @@ function EMP.client_createParticlesAt(self, particleLocations)
 		else
 			sm.particle.createParticle( "construct_welding", particleLocation )
 		end
+	end
+	local effect = sm.effect.createEffect( "Collision - Impact" )--, self.interactable )
+	effect:setParameter("Size", -10)
+	effect:setParameter("Velocity", 11)
+	effect:setParameter("Material", 0)
+	effect:setPosition(self.shape.worldPosition)
+	for x=1,10 do
+		effect:start()
 	end
 end
