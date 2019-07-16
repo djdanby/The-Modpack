@@ -277,7 +277,7 @@ function Gimball.client_onFixedUpdate(self, dt)
 	self.shootEffect:setOffsetRotation(localRot)
 	
 	self.shootEffect:setOffsetPosition(-sm.vec3.new(0,0,0.5))
-	if self.power ~= 0 then
+	if self.interactable.power ~= 0 then
 		if not self.shootEffect:isPlaying() then
 			self.shootEffect:start() 
 		end
