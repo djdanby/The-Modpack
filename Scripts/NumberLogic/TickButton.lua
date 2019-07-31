@@ -65,8 +65,8 @@ function TickButton.server_onFixedUpdate( self, dt )
 	self.wasActive = logicactive
 	
 	if self.interactable.active and self.killAtTick <= sm.game.getCurrentTick() then
-		self.interactable.active = false
-		self.interactable.power = 0
+		self.interactable:setActive(false)
+		self.interactable:setPower( 0 )
 	end
 	
 end
@@ -78,8 +78,8 @@ end
 function TickButton.server_onInteract(self, nosound)
 	self.killAtTick = sm.game.getCurrentTick() + self.ticksToLive
 	self.network:sendToClients("client_buttonPress",{self.ticksToLive, self.killAtTick, not nosound})
-	self.interactable.active = true
-	self.interactable.power = 1
+	self.interactable:setActive(true)
+	self.interactable:setPower( 1 )
 end
 
 function TickButton.server_clientRequest(self) -- sends data to newly joined clients

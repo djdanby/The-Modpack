@@ -53,13 +53,13 @@ function SmartThruster.server_onFixedUpdate( self, dt )
 		if power < 0 then power = -3.3*10^38 else power = 3.3*10^38 end  
 	end
 	
-	self.interactable.power = power * (logicinput or 1)
-	self.interactable.active = logicinput
+	self.interactable:setPower( power * (logicinput or 1))
+	self.interactable:setActive( logicinput)
 	
 	power = power * logicinput
 		
 	if power ~= 0 and math.abs(power) ~= math.huge then
-		sm.physics.applyImpulse(self.shape, sm.vec3.new(0,0, 0 - power))
+		sm.physics.applyImpulse(self.shape, sm.vec3.new(0,0, 0 - self.interactable.power))
 	end
 end
 

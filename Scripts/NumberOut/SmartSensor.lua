@@ -138,8 +138,8 @@ function SmartSensor.server_onFixedUpdate( self, dt )
 			local startPos = src + getLocal(self.shape, raypoint)
 			local hit, result = sm.physics.raycast(startPos, startPos + self.shape.up*3000)
 			local resulttype = result.type
-			self.interactable.power = (resulttype == "terrainSurface" and 1 or 0) + (resulttype == "terrainAsset" and 2 or 0) + (resulttype == "lift" and 3 or 0) +
-					(resulttype == "body" and 4 or 0) + (resulttype == "character" and 5 or 0) + (resulttype == "joint" and 6 or 0) + (resulttype == "vision" and 7 or 0)
+			self.interactable:setPower((resulttype == "terrainSurface" and 1 or 0) + (resulttype == "terrainAsset" and 2 or 0) + (resulttype == "lift" and 3 or 0) +
+					(resulttype == "body" and 4 or 0) + (resulttype == "character" and 5 or 0) + (resulttype == "joint" and 6 or 0) + (resulttype == "vision" and 7 or 0))
 					
 		end
 	end
@@ -159,13 +159,13 @@ function SmartSensor.server_onFixedUpdate( self, dt )
 					color = tonumber(k)
 				end
 			end
-			self.interactable.power = color
+			self.interactable:setPower(color)
 		else
-			self.interactable.power = distance or 0
+			self.interactable:setPower(distance or 0)
 		end
 	end
 	
-	self.interactable.active = self.interactable.power > 0
+	self.interactable:setActive(self.interactable.power > 0)
 end
 
 function SmartSensor.server_changemode(self, crouch)

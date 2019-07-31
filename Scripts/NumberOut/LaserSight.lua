@@ -27,14 +27,14 @@ function LaserSight.server_onFixedUpdate(self, dt)
     if active then
         local hit, fraction = sm.physics.distanceRaycast(self.shape.worldPosition - self.shape.right/50, self.shape.up * 2500)
         if hit then
-			self.interactable.power = fraction * 2500 * 4 + 0.5
+			self.interactable:setPower( fraction * 2500 * 4 + 0.5)
 		end
 	else
-		self.interactable.power = 0
+		self.interactable:setPower(0)
     end
 	if not self.lastpower then self.lastpower = self.interactable.power end
 	local deltapower = self.interactable.power - self.lastpower
-	self.interactable.active = self.lastdeltapower and self.lastdeltapower - deltapower < -1.5 or false
+	self.interactable:setActive(self.lastdeltapower and self.lastdeltapower - deltapower < -1.5 or false)
 	self.lastdeltapower = deltapower
 	self.lastpower = self.interactable.power
 end
