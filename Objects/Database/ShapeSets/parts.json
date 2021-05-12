@@ -2,6 +2,7 @@
 	"partList" : [
 		{
 			"uuid": "bf8f8e24-806b-4223-9345-2bac7c1e265d", // reduced collision block
+			"name": "modpack_reduced_collision_block",
 			"renderable": {
 				"lodList": [
 					{
@@ -39,6 +40,7 @@
 		},
 		{
 			"uuid": "9c40e3ab-8d03-40bc-a88b-eaebc61257d6", // vent block
+			"name": "modpack_vent_block",
 			"renderable": {
 				"lodList": [
 					{
@@ -74,6 +76,7 @@
 		},
 		{
 			"uuid": "b57c8185-2f95-4ba8-818d-eed258e01d00", // 1x1
+			"name": "modpack_mjm_wheelroller1x1",
 			"renderable": {
 				"lodList": [
 					{
@@ -100,6 +103,7 @@
 		},
 		{
 			"uuid": "4e1452d0-a9c2-42d4-91cf-1aea84c533ed", // 2x1
+			"name": "modpack_mjm_wheelroller2x1",
 			"renderable": {
 				"lodList": [
 					{
@@ -147,6 +151,7 @@
 		},
 		{
 			"uuid": "c460f40f-c7b7-4695-a627-9f01749724b6", // round 3x1
+			"name": "modpack_mjm_wheelroller3x1",
 			"renderable": {
 				"lodList": [
 					{
@@ -174,6 +179,7 @@
 ///////////////
 		{
 			"uuid": "c9cf3b88-86f3-4146-af16-a7b16c917ecc", // hubless
+			"name": "modpack_mjm_wheelbubless",
 			"renderable": {
 				"lodList": [
 					{
@@ -200,6 +206,7 @@
 		},
 		{
 			"uuid": "4358b01f-3303-42a2-91d2-cc950e23b59b", // invisible wheel
+			"name": "modpack_invisible_wheel,
 			"renderable": {
 				"lodList": [
 					{
@@ -227,6 +234,7 @@
 // dirt wheels
 		{
 			"uuid": "27b6541d-2be0-420f-abb8-d59f566e85bd",
+			"name": "modpack_mjm_wheeldirtbike3xhalf",
 			"renderable": {
 				"lodList": [
 					{
@@ -253,6 +261,7 @@
 		},
 		{
 			"uuid": "68a7fe0a-4d48-4552-a29d-044d3c7b9e02",
+			"name": "modpack_mjm_wheeldirtbike3x1",
 			"renderable": {
 				"lodList": [
 					{
@@ -279,6 +288,7 @@
 		},
 		{
 			"uuid": "92d3c375-0e45-4df4-8691-90e49e8ce24d",
+			"name": "modpack_mjm_wheeldirtbike4x1,
 			"renderable": {
 				"lodList": [
 					{
@@ -326,6 +336,7 @@
 		},
 		{
 			"uuid": "041ae0ae-07d5-4ac5-9767-be396ba2445d",
+			"name": "modpack_mjm_wheeldirtbike5x1,
 			"renderable": {
 				"lodList": [
 					{
@@ -352,6 +363,7 @@
 		},
 		{
 			"uuid": "c47ff0cd-e1f2-4727-ba40-c85d0512d6d0",
+			"name": "modpack_mjm_wheeldirtbike5x2,
 			"renderable": {
 				"lodList": [
 					{
@@ -377,6 +389,7 @@
 		},
 		{
 			"uuid": "784bf162-b2d1-4a6d-9cf4-091827871a40",
+			"name": "modpack_mjm_wheeldirtbike5x3,
 			"renderable": {
 				"lodList": [
 					{
@@ -404,6 +417,7 @@
 // street wheels
 		{
 			"uuid": "5a9ff028-a6cb-4010-bcd4-c88eb230bcdb",
+			"name": "modpack_mjm_WheelStreet3x1,
 			"renderable": {
 				"lodList": [
 					{
@@ -431,6 +445,7 @@
 		},
 		{
 			"uuid": "58e7fdd0-9f15-466c-aaba-60805044fe67",
+			"name": "modpack_mjm_WheelStreet4x1,
 			"renderable": {
 				"lodList": [
 					{
@@ -479,6 +494,7 @@
 		},
 		{
 			"uuid": "3147a872-cb90-487c-b6ce-438c6403b09c",
+			"name": "modpack_mjm_WheelStreet4x1,
 			"renderable": {
 				"lodList": [
 					{
@@ -526,6 +542,7 @@
 		},
 		{
 			"uuid": "a02f96b2-26c3-4b3e-a00c-32254af91a5d",
+			"name": "modpack_mjm_WheelStreet5x2,
 			"renderable": {
 				"lodList": [
 					{
@@ -552,6 +569,7 @@
 		},
 		{
 			"uuid": "d3954d83-78ee-4fbf-9a60-70e4872e1d39",
+			"name": "modpack_mjm_WheelStreet6x2.mesh",
 			"renderable": {
 				"lodList": [
 					{
@@ -600,6 +618,7 @@
 // combat wheels
 		{
 			"uuid": "d59bd448-6401-4476-849a-e6fc86d28b7b",
+			"name": "modpack_mjm_WheelCombat3x1",
 			"renderable": {
 				"lodList": [
 					{
@@ -627,6 +646,7 @@
 		},
 		{
 			"uuid": "96fc86b1-57e7-4795-9d39-90e74f52ba87",
+			"name": "modpack_mjm_WheelCombat5x2",
 			"renderable": {
 				"lodList": [
 					{
@@ -653,6 +673,7 @@
 		},
 		{
 			"uuid": "fafdc38f-e374-49fd-8fea-4062a4b5c93a",
+			"name": "modpack_mjm_WheelCombat7x2",
 			"renderable": {
 				"lodList": [
 					{
@@ -680,6 +701,7 @@
 		},
 		{
 			"uuid": "4dee7b84-ee4c-42ce-9a42-4c6ced837ff5",
+			"name": "modpack_mjm_WheelCombat9x3",
 			"renderable": {
 				"lodList": [
 					{
@@ -707,6 +729,7 @@
 		},
 		{
 			"uuid": "583f20c9-a7da-477b-b852-aac404467e3a",
+			"name": "modpack_mjm_WheelCombat11x4",
 			"renderable": {
 				"lodList": [
 					{
@@ -734,6 +757,7 @@
 		},
 		{
 			"uuid": "90bc9601-b874-45e2-8970-09d5e5ff3ca9",
+			"name": "modpack_mjm_WheelCombat13x5",
 			"renderable": {
 				"lodList": [
 					{
@@ -762,6 +786,7 @@
 // sand wheels
 		{
 			"uuid": "abe5a33f-a3cc-41a8-b32a-731ec2b184c1",
+			"name": "modpack_mjm_WheelSand3x2",
 			"renderable": {
 				"lodList": [
 					{
@@ -790,6 +815,7 @@
 		},
 		{
 			"uuid": "0761c82c-7a3f-4c22-8ec1-46223f10a2de",
+			"name": "modpack_mjm_WheelSand5x3",
 			"renderable": {
 				"lodList": [
 					{
@@ -817,6 +843,7 @@
 		},
 		{
 			"uuid": "ee8869cb-9cce-43c3-a04a-e8b37b9de0ed",
+			"name": "modpack_mjm_WheelSand7x4",
 			"renderable": {
 				"lodList": [
 					{
@@ -845,6 +872,7 @@
 		},
 		{
 			"uuid": "2210586c-3a93-43ff-b861-542e2d2d12d6",
+			"name": "modpack_mjm_WheelSand9x5",
 			"renderable": {
 				"lodList": [
 					{
@@ -873,6 +901,7 @@
 		},
 		{
 			"uuid": "6afcb463-925a-4a2e-b9bf-3397ef094df9",
+			"name": "modpack_mjm_WheelSand11x6",
 			"renderable": {
 				"lodList": [
 					{
@@ -901,6 +930,7 @@
 		},
 		{
 			"uuid": "b0f71aed-04f0-4bba-b969-cba57f3fc667",
+			"name": "modpack_mjm_WheelSand13x6",
 			"renderable": {
 				"lodList": [
 					{
@@ -929,6 +959,7 @@
 		},
 		{
 			"uuid": "87f8f460-eba5-43c1-a1ad-facfb3d3f376",
+			"name": "modpack_mjm_WheelSand15x7",
 			"renderable": {
 				"lodList": [
 					{
@@ -957,6 +988,7 @@
 		},
 		{
 			"uuid": "2bcc8c8f-1e94-4f9d-97b9-6e7423ca40b0",
+			"name": "modpack_mjm_WheelSand17x8",
 			"renderable": {
 				"lodList": [
 					{
@@ -985,6 +1017,7 @@
 		},
 		{
 			"uuid": "61a70b37-ea24-4022-b1e6-45a5a3ae179d",
+			"name": "modpack_mjm_WheelSand19x9",
 			"renderable": {
 				"lodList": [
 					{
@@ -1014,7 +1047,8 @@
 // vanilla large wheels
 		{
 			"legacyId": 3490,
-			"uuid": "036fc6d2-45df-11e6-beb8-9e71128cae77", 
+			"uuid": "036fc6d2-45df-11e6-beb8-9e71128cae77",
+			"name": "modpack_bigwheel_7x3",
 			"renderable": {
 				"lodList": [
 					{
@@ -1043,6 +1077,7 @@
 		{
 			"legacyId": 3491,
 			"uuid": "036fc79a-45df-11e6-beb8-9e71128cae77", 
+			"name": "modpack_bigwheel_9x4,
 			"renderable": {
 				"lodList": [
 					{
@@ -1070,6 +1105,7 @@
 		},
 		{
 			"uuid": "d739fdf9-2c61-47ea-88ab-beac6a6c35c0",
+			"name": "modpack_chained_wheel,
 			"renderable": {
 				"lodList": [
 					{
@@ -1105,6 +1141,7 @@
 		},
 		{
 			"uuid": "d739fdf9-2c61-47ea-88ab-beac6a6c35c1",
+			"name": "modpack_spiked_wheel,
 			"renderable": {
 				"lodList": [
 					{
@@ -1143,6 +1180,7 @@
 		{
 			"legacyId": 7101,
 			"uuid": "036ff44a-45df-11e6-beb8-9e71128cae77", 
+			"name": "modpack_RimLarge1,
 			"renderable": {
 				"lodList": [
 					{
@@ -1191,6 +1229,7 @@
 		{
 			"legacyId": 7151,
 			"uuid": "036ff6ca-45df-11e6-beb8-9e71128cae77", 
+			"name": "modpack_RimSmall1,
 			"renderable": {
 				"lodList": [
 					{
@@ -1239,6 +1278,7 @@
 		{
 			"legacyId": 7102,
 			"uuid": "036ff530-45df-11e6-beb8-9e71128cae77",
+			"name": "modpack_RimLarge2,
 			"renderable": {
 				"lodList": [
 					{
@@ -1287,6 +1327,7 @@
 		{
 			"legacyId": 7152,
 			"uuid": "036ff792-45df-11e6-beb8-9e71128cae77", 
+			"name": "modpack_RimSmall2,
 			"renderable": {
 				"lodList": [
 					{
@@ -1334,7 +1375,8 @@
 		},
 		{
 			"legacyId": 7103,
-			"uuid": "036ff5f8-45df-11e6-beb8-9e71128cae77", 
+			"uuid": "036ff5f8-45df-11e6-beb8-9e71128cae77",
+			"name": "modpack_RimLarge3,
 			"renderable": {
 				"lodList": [
 					{
@@ -1382,7 +1424,8 @@
 		},
 		{
 			"legacyId": 7153,
-			"uuid": "036ff864-45df-11e6-beb8-9e71128cae77", 
+			"uuid": "036ff864-45df-11e6-beb8-9e71128cae77",
+			"name": "modpack_RimSmall3,
 			"renderable": {
 				"lodList": [
 					{
