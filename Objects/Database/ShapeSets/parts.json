@@ -72,7 +72,8 @@
 			},
 			"density": 250.0,
 			"physicsMaterial": "Metal",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "b57c8185-2f95-4ba8-818d-eed258e01d00", // 1x1
@@ -99,7 +100,8 @@
 			"cylinder": { "diameter": 1, "depth": 1, "margin": 0.5, "axis": "Z" },
 			"density": 1250.0,
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "4e1452d0-a9c2-42d4-91cf-1aea84c533ed", // 2x1
@@ -147,7 +149,8 @@
 			},
 			"density": 500.0,
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "c460f40f-c7b7-4695-a627-9f01749724b6", // round 3x1
@@ -174,7 +177,8 @@
 			"cylinder": { "diameter": 3, "depth": 1, "margin": 0.5, "axis": "Z" },
 			"density": 1000.0,
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 ///////////////
 		{
@@ -202,7 +206,8 @@
 			"cylinder": { "diameter": 5, "depth": 1, "margin": 0.5, "axis": "Z" },
 			"density": 1000.0,
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "4358b01f-3303-42a2-91d2-cc950e23b59b", // invisible wheel
@@ -228,7 +233,8 @@
 			"color": "7f7f7f",
 			"cylinder": { "diameter": 5, "depth": 1, "axis": "Z" },
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 /////////////
 // dirt wheels
@@ -257,7 +263,8 @@
 			"cylinder": { "diameter": 3, "depth": 1, "margin": 0.5, "axis": "Z" },
 			"density": 1000.0,
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "68a7fe0a-4d48-4552-a29d-044d3c7b9e02",
@@ -284,7 +291,8 @@
 			"cylinder": { "diameter": 3, "depth": 1, "margin": 0.5, "axis": "Z" },
 			"density": 1000.0,
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "92d3c375-0e45-4df4-8691-90e49e8ce24d",
@@ -332,7 +340,8 @@
 			},
 			"density": 1000.0,
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "041ae0ae-07d5-4ac5-9767-be396ba2445d",
@@ -359,7 +368,8 @@
 			"cylinder": { "diameter": 5, "depth": 1, "margin": 0.5, "axis": "Z" },
 			"density": 1000.0,
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "c47ff0cd-e1f2-4727-ba40-c85d0512d6d0",
@@ -385,7 +395,8 @@
 			"color": "7f7f7f",
 			"cylinder": { "diameter": 5, "depth": 2, "margin": 0.5, "axis": "Z" },
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "784bf162-b2d1-4a6d-9cf4-091827871a40",
@@ -412,7 +423,8 @@
 			"cylinder": { "diameter": 5, "depth": 3, "margin": 0.5, "axis": "Z" },
 			"density": 250.0,
 			"physicsMaterial": "Plastic",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 // street wheels
 		{
@@ -441,7 +453,8 @@
 			"density": 1250.0,
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 3,
-			"friction": 0.8
+			"friction": 0.8,
+			"stackSize": 10
 		},
 		{
 			"uuid": "58e7fdd0-9f15-466c-aaba-60805044fe67",
@@ -490,7 +503,8 @@
 			"density": 1000.0,
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 3,
-			"friction": 0.8
+			"friction": 0.8,
+			"stackSize": 10
 		},
 		{
 			"uuid": "3147a872-cb90-487c-b6ce-438c6403b09c",
@@ -538,7 +552,8 @@
 			},
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 3,
-			"friction": 0.8
+			"friction": 0.8,
+			"stackSize": 10
 		},
 		{
 			"uuid": "a02f96b2-26c3-4b3e-a00c-32254af91a5d",
@@ -565,7 +580,8 @@
 			"cylinder": { "diameter": 5, "depth": 2, "margin": 0.5, "axis": "Z" },
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 3,
-			"friction": 0.8
+			"friction": 0.8,
+			"stackSize": 10
 		},
 		{
 			"uuid": "d3954d83-78ee-4fbf-9a60-70e4872e1d39",
@@ -613,7 +629,8 @@
 			},
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 3,
-			"friction": 0.8
+			"friction": 0.8,
+			"stackSize": 10
 		},
 // combat wheels
 		{
@@ -642,7 +659,8 @@
 			"density": 1250.0,
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 5,
-			"friction": 2
+			"friction": 2,
+			"stackSize": 10
 		},
 		{
 			"uuid": "96fc86b1-57e7-4795-9d39-90e74f52ba87",
@@ -669,7 +687,8 @@
 			"cylinder": { "diameter": 5, "depth": 2, "margin": 0.5, "axis": "Z" },
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 5,
-			"friction": 2
+			"friction": 2,
+			"stackSize": 10
 		},
 		{
 			"uuid": "fafdc38f-e374-49fd-8fea-4062a4b5c93a",
@@ -697,7 +716,8 @@
 			"density": 250,
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 5,
-			"friction": 2
+			"friction": 2,
+			"stackSize": 10
 		},
 		{
 			"uuid": "4dee7b84-ee4c-42ce-9a42-4c6ced837ff5",
@@ -725,7 +745,8 @@
 			"density": 200,
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 5,
-			"friction": 2
+			"friction": 2,
+			"stackSize": 10
 		},
 		{
 			"uuid": "583f20c9-a7da-477b-b852-aac404467e3a",
@@ -753,7 +774,8 @@
 			"density": 150,
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 5,
-			"friction": 2
+			"friction": 2,
+			"stackSize": 10
 		},
 		{
 			"uuid": "90bc9601-b874-45e2-8970-09d5e5ff3ca9",
@@ -781,7 +803,8 @@
 			"density": 125,
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 5,
-			"friction": 2
+			"friction": 2,
+			"stackSize": 10
 		},
 // sand wheels
 		{
@@ -811,7 +834,8 @@
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 4,
 			"friction": 0.8,
-			"restitution": 0.3
+			"restitution": 0.3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "0761c82c-7a3f-4c22-8ec1-46223f10a2de",
@@ -839,7 +863,8 @@
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 4,
 			"friction": 0.8,
-			"restitution": 0.3
+			"restitution": 0.3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "ee8869cb-9cce-43c3-a04a-e8b37b9de0ed",
@@ -868,7 +893,8 @@
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 4,
 			"friction": 0.8,
-			"restitution": 0.3
+			"restitution": 0.3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "2210586c-3a93-43ff-b861-542e2d2d12d6",
@@ -897,7 +923,8 @@
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 4,
 			"friction": 0.8,
-			"restitution": 0.3
+			"restitution": 0.3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "6afcb463-925a-4a2e-b9bf-3397ef094df9",
@@ -926,7 +953,8 @@
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 4,
 			"friction": 0.8,
-			"restitution": 0.3
+			"restitution": 0.3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "b0f71aed-04f0-4bba-b969-cba57f3fc667",
@@ -955,7 +983,8 @@
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 4,
 			"friction": 0.8,
-			"restitution": 0.3
+			"restitution": 0.3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "87f8f460-eba5-43c1-a1ad-facfb3d3f376",
@@ -984,7 +1013,8 @@
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 4,
 			"friction": 0.8,
-			"restitution": 0.3
+			"restitution": 0.3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "2bcc8c8f-1e94-4f9d-97b9-6e7423ca40b0",
@@ -1013,7 +1043,8 @@
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 4,
 			"friction": 0.8,
-			"restitution": 0.3
+			"restitution": 0.3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "61a70b37-ea24-4022-b1e6-45a5a3ae179d",
@@ -1042,7 +1073,8 @@
 			"physicsMaterial": "Plastic",
 			"qualityLevel": 4,
 			"friction": 0.8,
-			"restitution": 0.3
+			"restitution": 0.3,
+			"stackSize": 10
 		},
 // vanilla large wheels
 		{
@@ -1072,7 +1104,8 @@
 			"cylinder": { "diameter": 7, "depth": 3, "margin": 0.2, "axis": "Z" },
 			"physicsMaterial": "Plastic",
 			"sticky": "-Z+Z",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"legacyId": 3491,
@@ -1101,7 +1134,8 @@
 			"cylinder": { "diameter": 9, "depth": 4, "margin": 0.2, "axis": "Z" },
 			"physicsMaterial": "Plastic",
 			"sticky": "-Z+Z",
-			"qualityLevel": 3
+			"qualityLevel": 3,
+			"stackSize": 10
 		},
 		{
 			"uuid": "d739fdf9-2c61-47ea-88ab-beac6a6c35c0",
@@ -1137,7 +1171,8 @@
 			"physicsMaterial": "Plastic",
 			"sticky": "-Z+Z",
 			"qualityLevel": 3,
-			"friction": 100 //10 (10 = 1:1 with rock ice)
+			"friction": 100 //10 (10 = 1:1 with rock ice),
+			"stackSize": 10
 		},
 		{
 			"uuid": "d739fdf9-2c61-47ea-88ab-beac6a6c35c1",
@@ -1173,7 +1208,8 @@
 			"physicsMaterial": "Plastic",
 			"sticky": "-Z+Z",
 			"qualityLevel": 3,
-			"friction": 50000 //100000 (50k = 1:2 with smooth ice)
+			"friction": 50000 //100000 (50k = 1:2 with smooth ice),
+			"stackSize": 10
 		},
 
 // wheel rims
@@ -1224,7 +1260,8 @@
 			"density": 250.0,
 			"physicsMaterial": "Metal",
 			"sticky": "+Z",
-			"qualityLevel": 4
+			"qualityLevel": 4,
+			"stackSize": 10
 		},
 		{
 			"legacyId": 7151,
@@ -1273,7 +1310,8 @@
 			"density": 250.0,
 			"physicsMaterial": "Metal",
 			"sticky": "+Z",
-			"qualityLevel": 4
+			"qualityLevel": 4,
+			"stackSize": 10
 		},
 		{
 			"legacyId": 7102,
@@ -1322,7 +1360,8 @@
 			"density": 250.0,
 			"physicsMaterial": "Metal",
 			"sticky": "+Z",
-			"qualityLevel": 4
+			"qualityLevel": 4,
+			"stackSize": 10
 		},
 		{
 			"legacyId": 7152,
@@ -1371,7 +1410,8 @@
 			"density": 250.0,
 			"physicsMaterial": "Metal",
 			"sticky": "+Z",
-			"qualityLevel": 4
+			"qualityLevel": 4,
+			"stackSize": 10
 		},
 		{
 			"legacyId": 7103,
@@ -1420,7 +1460,8 @@
 			"density": 250.0,
 			"physicsMaterial": "Metal",
 			"sticky": "+Z",
-			"qualityLevel": 4
+			"qualityLevel": 4,
+			"stackSize": 10
 		},
 		{
 			"legacyId": 7153,
@@ -1469,7 +1510,8 @@
 			"density": 250.0,
 			"physicsMaterial": "Metal",
 			"sticky": "+Z",
-			"qualityLevel": 4
+			"qualityLevel": 4,
+			"stackSize": 10
 		}
 
 
