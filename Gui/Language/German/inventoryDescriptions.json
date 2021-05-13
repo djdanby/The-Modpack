@@ -66,32 +66,32 @@
 	"8f762ab9-5c78-4d9c-a22e-3119bf447169":
 	{
 		"title": "Lenkrohr",
-		"description": "Nutze dieses Bauteil um vom Steuer-Glitch gebrauch zu machen oder als kollisionsfreies Objekt.",
-		"keywords": [ "modpack", "Steuern", "glitch", "Feder", "Kollision", "ghost", "Drehmoment" ]
+		"description": "Nutze dieses Bauteil um vom Steuer-Glitch Gebrauch zu machen oder als kollisionsfreies Objekt.",
+		"keywords": [ "modpack", "Steuern", "glitch", "Feder", "Kollision", "ghost", "Drehmoment", "Fahrwerk", "Stoßdämpfer" ]
 	},
 	"c0d086eb-de4a-4ba9-922a-1c66f129d2ae":
 	{
-		"title": "Kleine Feder (kurz)",
-		"description": "Eine Feder welche für kleine Rohre geeignet ist.",
-		"keywords": [ "modpack", "Feder", "Federung" ]
+		"title": "Kleines Fahrwerk (kurz)",
+		"description": "Ein Fahrwerk welches für kleine Rohre geeignet ist.",
+		"keywords": [ "modpack", "Feder", "Federung", "Stoßdämpfer"  ]
 	},
 	"8d6e5264-9f90-400a-a471-6c0cae101f4d":
 	{
-		"title": "Kleine Feder (lang)",
-		"description": "Eine Feder welche für kleine Rohre geeignet ist.",
-		"keywords": [ "modpack", "Feder", "Federung" ]
+		"title": "Kleines Fahrwerk (lang)",
+		"description": "Ein Fahrwerk welches für kleine Rohre geeignet ist.",
+		"keywords": [ "modpack", "Feder", "Federung", "Stoßdämpfer"  ]
 	},
 	"9f016a8d-8cbe-4471-b210-f36f5f280758":
 	{
-		"title": "Feder (4x)",
-		"description": "Längere Feder.",
-		"keywords": [ "modpack", "Feder", "Federung" ]
+		"title": "Fahrwerk (4x)",
+		"description": "Längeres Fahrwerk.",
+		"keywords": [ "modpack", "Feder", "Federung", "Stoßdämpfer"  ]
 	},
 	"dd676b18-fd06-4aed-baa0-55d4599fdfa3":
 	{
-		"title": "Feder (5x)",
-		"description": "Eine noch längere Feder.",
-		"keywords": [ "modpack", "Feder", "Federung" ]
+		"title": "Fahrwerk (5x)",
+		"description": "Ein noch längeres Fahrwerk.",
+		"keywords": [ "modpack", "Feder", "Federung", "Stoßdämpfer"  ]
 	},
 	"a6d186ad-c9ba-4b6d-922c-6c13dfcea230":
 	{
@@ -171,7 +171,7 @@
 // engines
 	"93e08947-be6d-436c-a64f-932727428c89":
 	{
-		"title": "Motor Feder",
+		"title": "Motor Fahrwerk",
 		"description": "Dieses Teil ist ein Motor! Setze diesen Motor auf ein ein Lager und verbinde ihn damit! Platziere Rohre an einem Ende wo das Rad (und dessen Lenkung) sein wird. Nutze die andere Seite um die Bewegungsfreiheit zu begrenzen. Pass die Motorstärke an um die Federkraft einzustellen.",
 		"keywords": ["modpack", "motor", "Federung", "Feder", "Federung", "Winkel", " regler", "Controller", "Steuerung" ]
 	},
@@ -731,37 +731,37 @@
 // Felge
 	"036ff44a-45df-11e6-beb8-9e71128cae77":
 	{
-		"title": "Große Felge (1)",
+		"title": "Große Radkappe (1)",
 		"description": "Felge bzw. Radkappe",
 		"keywords": [ "modpack", "Rad", "Felge", "Radkappe", "Dekoration" ]
 	},
 	"036ff6ca-45df-11e6-beb8-9e71128cae77":
 	{
-		"title": "Kleine Felge (1)",
+		"title": "Kleine Radkappe (1)",
 		"description": "Felge bzw. Radkappe",
 		"keywords": [ "modpack", "Rad", "Felge", "Radkappe", "Dekoration" ]
 	},
 	"036ff530-45df-11e6-beb8-9e71128cae77":
 	{
-		"title": "Große Felge (2)",
+		"title": "Große Radkappe (2)",
 		"description": "Felge bzw. Radkappe",
 		"keywords": [ "modpack", "Rad", "Felge", "Radkappe", "Dekoration" ]
 	},
 	"036ff792-45df-11e6-beb8-9e71128cae77":
 	{
-		"title": "Kleine Felge (2)",
+		"title": "Kleine Radkappe (2)",
 		"description": "Felge bzw. Radkappe",
 		"keywords": [ "modpack", "Rad", "Felge", "Radkappe", "Dekoration" ]
 	},
 	"036ff5f8-45df-11e6-beb8-9e71128cae77":
 	{
-		"title": "Große Felge (3)",
+		"title": "Große Radkappe (3)",
 		"description": "Felge bzw. Radkappe",
 		"keywords": [ "modpack", "Rad", "Felge", "Radkappe", "Dekoration" ]
 	},
 	"036ff864-45df-11e6-beb8-9e71128cae77":
 	{
-		"title": "Kleine Felge (3)",
+		"title": "Kleine Radkappe (3)",
 		"description": "Felge bzw. Radkappe",
 		"keywords": [ "modpack", "Rad", "Felge", "Radkappe", "Dekoration" ]
 	}
